@@ -1,0 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace NexaCare.Host.Dto.Auth;
+
+public class RegisterDto
+{
+    [Required]
+    public required string Username { get; set; }
+    [Required]
+    public required string Password { get; set; }
+    [Required]
+    public required string Email { get; set; }
+}
